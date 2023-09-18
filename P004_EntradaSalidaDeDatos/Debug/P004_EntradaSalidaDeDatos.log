@@ -1,0 +1,8 @@
+﻿  P004_EntradaSalidaDeDatos.cpp
+C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\P004_EntradaSalidaDeDatos\P004_EntradaSalidaDeDatos.cpp(20,11): warning C4101: 'IMC': variable local sin referencia
+C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\P004_EntradaSalidaDeDatos\P004_EntradaSalidaDeDatos.cpp(19,11): warning C4101: 'altura': variable local sin referencia
+C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\P004_EntradaSalidaDeDatos\P004_EntradaSalidaDeDatos.cpp(18,9): warning C4101: 'peso': variable local sin referencia
+C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\P004_EntradaSalidaDeDatos\P004_EntradaSalidaDeDatos.cpp(17,9): warning C4101: 'edad': variable local sin referencia
+C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\P004_EntradaSalidaDeDatos\P004_EntradaSalidaDeDatos.cpp(13,30): warning C4101: 'sintoma3': variable local sin referencia
+C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\P004_EntradaSalidaDeDatos\P004_EntradaSalidaDeDatos.cpp(13,20): warning C4101: 'sintoma2': variable local sin referencia
+  P004_EntradaSalidaDeDatos.vcxproj -> C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\P004_EntradaSalidaDeDatos\Debug\P004_EntradaSalidaDeDatos.exe
