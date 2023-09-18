@@ -84,6 +84,7 @@ int main()
     g = sqrt(a);
     h = sqrt(b);
     i = pow(a, b);
+    j = e - d;
 
 
     std::cout << "el resultado de la division es: " << c << std::endl;
@@ -93,13 +94,6 @@ int main()
     std::cout << "el resultado de la raiz de a es: " << g << std::endl;
     std::cout << "el resultado de la raiz de b es: " << h << std::endl;
     std::cout << "el resultado de la potencia de a elevada a la b es: " << i << std::endl;
-
-
-
-
-
-
-
-
+    std::cout << "el resultado de la operacion j es:  " << j << std::endl;
 
 }
