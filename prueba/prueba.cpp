@@ -1,135 +1,87 @@
-// Fortnite.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//PRACTICA usando el IF,ELSE y el SWITCH, CASE
+// P009_Condicionales_Calculadora.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
 
 #include <iostream>
-#include <string>
+
 int main()
 {
-    int edad;
-    bool orden, orden2;
+    int opc;
+    int n1, n2;
+    float VA{};
+    float valorabsoluto = abs(VA);
+    bool repetir = true;
 
-    std::cout << "hola bienvenido al bar de pato xd\n";
-    std::cout << "cuantos anos tienes bro?\n";
-    std::cin >> edad;
 
-
-    if (edad >= 18)
+    while (repetir)
     {
-        std::cout << "Pasele entonces caballero\n";
+    std::cout << "Hola usuario dime que Operacion quieres hacer?\n";
+    std::cout << "1.-suma 2.-resta 3.-multiplicacion 4.-division 5.-Valor absoluto 6.-Mayor y menor que\n";
 
-        std::cout << "ya estas listo para ordenar?\n" <<
-            "1=si 0=no\n";
-        std::cin >> orden;
-        if (orden == true)
+    std::cin >> opc;
+
+
+        switch (opc)
         {
-            int opc = 0;
-            std::cout << "que va querer?\n";
-            std::cout << "Tenemos \n1.-tecate \n2.-skyye \n3.-michelada\n";
-            std::cin >> opc;
-
-            switch (opc)
+        case 1:
+            std::cout << "Dame un numero\n";
+            std::cin >> n1;
+            std::cout << "Dame otro numero para sumarlo\n";
+            std::cin >> n2;
+            std::cout << n1 + n2;
+            break;
+        case 2:
+            std::cout << "Dame un numero\n";
+            std::cin >> n1;
+            std::cout << "Dame otro numero para restarlo\n";
+            std::cin >> n2;
+            std::cout << n1 - n2;
+            break;
+        case 3:
+            std::cout << "Dame un numero\n";
+            std::cin >> n1;
+            std::cout << "Dame otro numero para multiplicarlo\n";
+            std::cin >> n2;
+            std::cout << n1 * n2;
+            break;
+        case 4:
+            std::cout << "Dame un numero\n";
+            std::cin >> n1;
+            std::cout << "Dame otro numero para dividirlo\n";
+            std::cin >> n2;
+            std::cout << n1 / n2;
+            break;
+        case 5:
+            std::cout << "Dame un numero para darte su valor absoluto\n";
+            std::cin >> VA;
+            std::cout << "El valor absoluto de "; std::cout << VA;  std::cout << " es: "; std::cout << valorabsoluto;
+            break;
+        case 6:
+            std::cout << "Dame un numero: ";
+            std::cin >> n1;
+            std::cout << "\ndame otro y te dire ";
+            std::cout << " cual es mayor y cual es menor: ";
+            std::cin >> n2;
+            if (n1 == n2)
             {
-            case 1:
-                std::cout << "Entonces seria tecate";
-                break;
-            case 2:
-                std::cout << "Entonces seria skyye";
-                break;
-            case 3:
-                std::cout << "Entonces seria michelada";
-                break;
-            default:
-                std::cout << "No temos eso en el menu jovenazo\n";
-            }
-            std::cout << " \ndisfrute su bebida";
-
-        }
-        else
-        {
-            bool siono;
-
-            std::cout << "les doy 5 minutos mas y vuelvo\n";
-            std::cout << "..................\n";
-            std::cout << "ya estan listos ahora si o que?\n";
-            std::cout << "1=si 0=no\n";
-            std::cin >> siono;
-
-            if (siono == true)
-            {
-                std::cout << "muy bien que seria entonces que vas a querer\n";
-                std::cout << "Tenemos \n1.-tecate \n2.-skyye \n3.-michelada\n";
-                std::cin >> siono;
-
-
-                switch (siono)
-
-                {
-                case 1:
-                    std::cout << "Entonces seria tecate";
-                    break;
-                case 2:
-                    std::cout << "Entonces seria skyye";
-                    break;
-                case 3:
-                    std::cout << "Entonces seria michelada";
-                    break;
-                default:
-                    std::cout << "No temos eso en el menu jovenazo\n";
-                }
-                std::cout << " \ndisfrute su bebida";
+                std::cout << "\naaa mira son iguales!\n";
             }
             else
             {
-                std::cout << "ah q pues ya pidan algo o los voto alv\n";
+                if (n1 < n2)
+                {
+                    std::cout << "El mayor es " << n2 << "\nY el menor es " << n1 << std::endl;
+                }
+                else
+                {
+                    std::cout << "El mayor es " << n1 << "\nY el menor es " << n2 << std::endl;
+                }
             }
 
-
         }
-
+        std::cout << "\nQuieres hacer otra operacion?\n";
+        std::cout << "\n1.-Si 0.-No\n";
+        std::cin >> repetir;
     }
-    else
-    {
-        bool opcion1;
-        int opc2;
-
-        std::string Juego1 = "Valorant", Juego2 = "COD", Juego3 = "FallGuys";
-
-        std::cout << "hijole jovenazo mejor vayase a jugar fornite\n";
-        std::cout << "quieres ir a jugar fortnite?\n";
-        std::cout << "\n1.- Si 0.-No\n";
-        std::cin >> opcion1;
-        if (opcion1 == true)
-        {
-            std::cout << "Va vamos a jugar un fort bro\n";
-            std::cout << "*prendiendo la pc*\n";
-            std::cout << "iniciando fortnite\n";
-        }
-        else
-        {
-            std::cout << "entonces que quieres jugar bro?\n";
-            std::cout << "elige una de estas opciones\n";
-            std::cout << "\n1.-Valorant \n2.-COD \n3.-Fallguys\n";
-            std::cin >> opc2;
-
-            switch (opc2)
-            {
-            case 1:
-                std::cout << "Dale vamo a subir de rango en " << Juego1;
-                break;
-            case 2:
-                std::cout << "Vaaa vamos a darle a unos zomies o que " << Juego2;
-                break;
-            case 3:
-                std::cout << "Dale pa ya me meti al " << Juego3;
-            default:
-                std::cout << "\nahorita no tengo ese juego carnal\n";
-
-            }
-        }
-
-
-
-
-    }
-
 }
+
+
