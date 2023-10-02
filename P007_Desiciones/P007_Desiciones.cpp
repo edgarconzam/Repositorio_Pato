@@ -85,7 +85,7 @@ int main()
                 std::cout << "y solo pasa el mejor peleador de cada grupo a la siguiente fase que es la semifinal\n";
                 std::cout << "cada peleador ganador de la semifinal peleara en la final, y el ganador de la final sera el completo GANADOR\n";
             default:
-                std::cout << "Elige bien la opcion\n";
+                std::cout << "Elige bien la opcion :D\n";
 
 
 
