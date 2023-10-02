@@ -1,0 +1,5 @@
+﻿  prueba.cpp
+C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\Repositorio_Pato\prueba\prueba.cpp(70,17): warning C4808: case '2' no es un valor válido para la condición switch de tipo 'bool'
+C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\Repositorio_Pato\prueba\prueba.cpp(73,17): warning C4808: case '3' no es un valor válido para la condición switch de tipo 'bool'
+C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\Repositorio_Pato\prueba\prueba.cpp(9,17): warning C4101: 'orden2': variable local sin referencia
+  prueba.vcxproj -> C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\Repositorio_Pato\prueba\x64\Debug\prueba.exe
