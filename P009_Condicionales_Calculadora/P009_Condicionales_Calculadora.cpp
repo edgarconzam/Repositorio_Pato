@@ -8,11 +8,11 @@ int main()
 {
     int opc;
     int n1, n2;
-    float valor{};
+    float numero;
    
     bool repetir = true;
 
-    float valorAbsoluto = abs(valor);
+    
 
 
     while (repetir)
@@ -55,9 +55,17 @@ int main()
             break;
         case 5:
             std::cout << "Dame un numero para darte su valor absoluto\n";
-            std::cin >> valor;
-            std::cout << "El valor absoluto de "; std::cout << valor;  std::cout << " es: "; std::cout << valorAbsoluto;
-            std::cin.ignore();
+            std::cin >> numero;
+            if (numero >= 0)
+            {
+                std::cout << "El valor absoluto es :" << numero;
+            }
+
+            else
+            {
+                std::cout << (numero = numero * -1);
+            }
+            
             break;
         case 6:
             std::cout << "Dame un numero: ";
