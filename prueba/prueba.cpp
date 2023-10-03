@@ -7,8 +7,9 @@ int main()
 {
     int opc;
     int n1, n2;
-    float VA{};
-    float valorabsoluto = abs(VA);
+    int absoluto;
+    int numero;
+    
     bool repetir = true;
 
 
@@ -51,10 +52,13 @@ int main()
             std::cout << n1 / n2;
             break;
         case 5:
-            std::cout << "Dame un numero para darte su valor absoluto\n";
-            std::cin >> VA;
-            std::cout << "El valor absoluto de "; std::cout << VA;  std::cout << " es: "; std::cout << valorabsoluto;
+            std::cout << "Este porgrama determina el valor absoluto de un muero\n";
+            std::cout << "Ingresa el numero\n";
+            std::cin >> numero;
+            absoluto = abs(numero);
+            std::cout << "El valor absoulto de " << numero << " es " << absoluto;
             break;
+          
         case 6:
             std::cout << "Dame un numero: ";
             std::cin >> n1;
