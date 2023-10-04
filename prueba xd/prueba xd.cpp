@@ -49,7 +49,27 @@ int main()
         }
         else
         {
-            cout << "Tu deporte es el Tenis" << endl;
+            cout << "tu deporte es de mesa?" << endl;
+            cin >> opc;
+            if (opc)
+            {
+                cout << "tu deporte tiene actividad fisica?" << endl;
+                cin >> opc;
+                if (opc)
+                {
+                    cout << "tu deporte es pingpong" << endl;
+                }
+                else
+                {
+                    cout << "tu deporte es ajedrez" << endl;
+                }
+            }
+            else
+            {
+                cout << "tu deporte es tenis" << endl;
+            }
+                
+            
         }
         cout << "Deseas jugar otra vez? :D" << endl;
         cout << "1.-Si 0.-No" << endl;
