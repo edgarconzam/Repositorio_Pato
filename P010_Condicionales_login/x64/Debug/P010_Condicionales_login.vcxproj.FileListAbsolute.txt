@@ -1,1 +1,2 @@
 C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P010_Condicionales_login\x64\Debug\P010_Condicionales_login.exe
+C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\Repositorio_Pato\P010_Condicionales_login\x64\Debug\P010_Condicionales_login.exe
