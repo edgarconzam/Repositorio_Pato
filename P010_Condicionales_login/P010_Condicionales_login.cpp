@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-	setlocale(LC_ALL, "es_MX.UTF - 8");
+	setlocale(LC_ALL, "es_MX.UTF-8");
 
 	string usuario;
 	string Password;
