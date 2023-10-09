@@ -1,0 +1,4 @@
+﻿  P012_Bucles_JuegoInfinito.cpp
+C:\Users\LABORATORIO 210\Desktop\Repositorio_Pato\P012_Bucles_JuegoInfinito\P012_Bucles_JuegoInfinito.cpp(12,10): warning C4101: 'repetir': variable local sin referencia
+C:\Users\LABORATORIO 210\Desktop\Repositorio_Pato\P012_Bucles_JuegoInfinito\P012_Bucles_JuegoInfinito.cpp(13,10): warning C4101: 'opc': variable local sin referencia
+  P012_Bucles_JuegoInfinito.vcxproj -> C:\Users\LABORATORIO 210\Desktop\Repositorio_Pato\P012_Bucles_JuegoInfinito\x64\Debug\P012_Bucles_JuegoInfinito.exe

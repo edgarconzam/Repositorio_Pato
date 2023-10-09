@@ -3,27 +3,34 @@
 //Utilizar las decisiones simples para realizar una comparación de datos - Login en un videojuego.
 
 #include <iostream>
+#include <locale.h>
 using namespace std;
 
 int main()
 {
-	string usuario;
-	string contrasena;
+	setlocale(LC_ALL, "es_MX.UTF-8");
 
+	string usuario;
+	string Password;
+
+	cout << "============================================" << endl;
+	cout << "     Bienvenido al valo mi pana" << endl;
+	cout << "          Ingresa tus datos" << endl;
+	cout << "============================================" << endl;
 	do
 	{
 		cout << "Usuario: " << endl;
 		cin >> usuario;
 
-		cout << "Constrasena: " << endl;
-		cin >> contrasena;
+		cout << "Contraseña: " << endl;
+		cin >> Password;
 
 		if (usuario == "Pato")
 		{
-			if (contrasena == "elpepexd")
+			if (Password == "elpepexd")
 			{
 				cout << "-------------------------------------" << endl;
-				cout << "      Entraste al programa :D        " << endl;
+				cout << "      Entraste al VALOOOO :D        " << endl;
 				cout << "-------------------------------------" << endl;
 			}
 			else
@@ -45,7 +52,7 @@ int main()
 		//Mientras usuario sea "Pato" la segundo no se evalua por que la primera es verdadera.
 		//El operador no es igual a ( != ) devuelve true
 		//  si los operandos no tienen el mismo valor; de lo contrario, devuelve false .
-	} while (usuario != "Pato" || contrasena != "elpepexd");
+	} while (usuario != "Pato" || Password != "elpepexd");
 }
 
 

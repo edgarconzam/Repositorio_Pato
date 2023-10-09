@@ -3,39 +3,46 @@
 //
 
 #include <iostream>
+#include <math.h>
+
+
 using namespace std;
 
 int main()
 {
-	int num1;
-	int num2;
-
-
-
-	cout << "En este programa determinara que numero es mayor que el otro\n";
-	cout << "Usuario dame el primer numero\n";
-	cin >> num1;
-	cout << "Usuario dame el segundo numero\n";
-	cin >> num2;
-
-	if (num1 > num2){
-		cout << "El mayor es: " << num1; 
-		cout << "\n nos vemos pa >:D";
-	}
-
-	else{
-		cout << "El mayor es: " << num2;  
-		cout << "\n nos vemos pa >:D";
-			
-		
-		
-	}
-	
-	
-
-	
-
+    
+    float num1 = 0;
+    float num2 = 0;
+    cout << " Hola usuario, dame un numero\n";
+    cin >> num1;
+    cout << "Dame otro numero\n";
+    cin >> num2;
+   
+    if (num1 > num2)
+    {
+        std::cout << num1 << " es mayor a " << num2 << std::endl;
+    }
+    if (num1 < num2)
+    {
+        std::cout << num1 << " es menor a " << num2 << std::endl;
+    }
+    if (num1 == num2)
+    {
+        std::cout << num1 << " es igual a " << num2 << std::endl;
+    }
 }
+		
+		
+	
+	
+	
+	
+	
+	
+
+	
+
+
 
 	
 
