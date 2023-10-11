@@ -9,16 +9,16 @@
 int main()
 {
     int contador = 0;
-    bool repetir;
+    bool repetir = true;
     bool opc;
-
     setlocale(LC_ALL, "ES_MX.UTF-8");
-    while (repetir)
+   
+   while(repetir)
     {
-        setlocale(LC_ALL, "ES_MX.UTF-8");
+        
         std::cout << "Hola bienvenido a LATAM Dia 1\n";
-        std::cout << "3 <3\n";
-        std::cout << "Te encuentras con un xolo que te la anda hacieno de pedo..... ¿Que haces?\n";
+        std::cout << " Inicias con 3 <3\n";
+        std::cout << "Te encuentras con un xolo que te la anda haciendo de pedo..... ¿Que haces?\n";
         std::cout << "1.-Corres 0.-Te haces el valiente y lo enfrentas\n";
         std::cin >> opc;
 
@@ -42,9 +42,17 @@ int main()
         if (opc)
         {
             std::cout << "Te metiste al mar y accidentalmente tragas agua y te da una infeccion estomacal muy fuerte y te mueres\n";
-            std::cout << "Tienes 3 <3\n";
+            std::cout << "Tienes 1 <3\n";
         }
-
+        else
+        {
+            std::cout << "yyyyyyyyyyyyyy jaajja le da miedo el mar\n";
+        }
+        
+        std::cout << "¿Deseas repetir?\n";
+        std::cout << "1.-Si  0.-No\n";
+        std::cin >> repetir;
+        system("cls");
     }
 }
 
