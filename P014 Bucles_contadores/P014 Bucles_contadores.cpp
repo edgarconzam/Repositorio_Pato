@@ -10,7 +10,7 @@
 int main()
 {
 	int i = 0;
-	int contador1 = 1000;
+	int contador1 = 1;
 	int contador2 = 500;
 	int contador3 = 0.1;
 	bool repetir = true;
@@ -21,33 +21,44 @@ int main()
 	{
 		std::cout << "En este programa haremos diferentes tipos de contadores y con diferentes velocidades\n";
 		std::cout << "Vamos a empezar con un contador que funciona con while,do, for\n";
-		
+
+		while (i <= 1000)
+		{
+			std::cout << "El contador while va en: " << i << " " << std::endl;
+			i++;
+			Sleep(contador1);
+		}
+		system("PAUSE()");
+
+		i = 0;
 		do
 		{
-			for (i = 1000; i >= 0; i--)
-			{
-				std::cout << i << std::endl;
-				Sleep(contador3);
-			}
-			std::cout << "Quieres repetir el contador?\n";
-			std::cout << "1.-Si  0.-No\n";
-			std::cin >> continuar;
-		} while(continuar);
+			std::cout << "El contador do while va en: " << i << std::endl; i++;
+			Sleep(contador2);
+		} while(i<=1000);
 
-		std::cout << "Ahora vamos a contar de 0 a 100 lento\n";
+	
+		system("PAUSE()");
+
+		for (i = 0; i <= 1000; i++)
+		{
+			std::cout << "El contador for va en: " << i << std::endl; i++;
+			Sleep(contador3);
+		}
 
 		for (i = 0; i <= 100; i++)
 		{
 			std::cout << i << std::endl;
-			Sleep(contador1);
+			Sleep(contador3);
 		}
+		system("PAUSE()");
 
 		std::cout << "Ahora vamos a contar de 10 en 10 hasta llegar a 100\n";
 
-		for (i = 0; i <= 100; i = i + 10)
+		for (i = 0; i <= 100; i = i++)
 		{
-			std::cout << i << std::endl;
-			Sleep(contador2);
+			std::cout << i;
+			Sleep(contador3);
 		}
 
 		std::cout << "Esto ha sido todo, quieres repetir el programa?\n";
