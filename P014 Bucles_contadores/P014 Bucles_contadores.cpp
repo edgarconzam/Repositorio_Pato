@@ -12,7 +12,7 @@ int main()
 	int i = 0;
 	int contador1 = 1000;
 	int contador2 = 500;
-	int contador3 = 0.1;
+	int contador3 = 100;
 	bool repetir = true;
 	bool continuar;
 	
