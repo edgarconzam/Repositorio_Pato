@@ -15,17 +15,18 @@ int main()
     std::string pokemon;
     std::string pika2;
     std::string chari2;
+    int vidapikachu = 100;
+    int vidacharizard = 100;
+    int ataquepikachu;
 
     int i;
     int opc;
-    int vida;
-    int ataque;
-    bool repetir;
+    bool repetir = true;
     bool continuar;
 
-    system("Color 61");
+    system("Color 69");
     
-    while (repetir = true)
+    while (repetir)
     {
         std::cout << "===================================================\n";
         std::cout << "       BIENVENIDO AL ARENA POKEMON\n";
@@ -48,25 +49,20 @@ int main()
             {
             case 1:
                 std::cout << "Le bajaste 10\n";
-              
-
             case 2:
                 srand(time(NULL));
                 for (i = 1; i == 1; i++)
                 {
-                    printf("%d\n", (rand() % 100) + 1);
+                    ataquepikachu =  rand() % 100 + 1;
                 }
 
-                if (i > 60)
+                if (ataquepikachu <= 60)
                 {
-                    std::cout << "fallaste el ataque\n";
+                    std::cout << "le quitas 40 de vida\n";
                 }
                 else
                 {
-                    if(i <= 60)
-                    {
-                        std::cout << "Le bajaste 40\n";
-                    }
+                    std::cout << "fallaste el ataque\n";
                 }
 
 

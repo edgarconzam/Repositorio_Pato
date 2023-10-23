@@ -1,6 +1,4 @@
 ﻿  P015 Batalla Pokémon.cpp
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(54,27): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(22,9): warning C4101: 'ataque': variable local sin referencia
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(21,9): warning C4101: 'vida': variable local sin referencia
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(24,10): warning C4101: 'continuar': variable local sin referencia
-  P015 Batalla Pokémon.vcxproj -> C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\x64\Debug\P015 Batalla Pokémon.exe
+C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(53,27): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(25,10): warning C4101: 'continuar': variable local sin referencia
+  P015 Batalla Pokémon.vcxproj -> C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\Repositorio_Pato\P015 Batalla Pokémon\x64\Debug\P015 Batalla Pokémon.exe

@@ -1,2 +1,3 @@
 ﻿  prueba xd.cpp
-  prueba xd.vcxproj -> C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\prueba xd\x64\Debug\prueba xd.exe
+C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\Repositorio_Pato\prueba xd\prueba xd.cpp(9,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  prueba xd.vcxproj -> C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\Repositorio_Pato\prueba xd\x64\Debug\prueba xd.exe
