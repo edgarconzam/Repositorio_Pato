@@ -10,9 +10,9 @@
 int main()
 {
 	int i = 0;
-	int contador1 = 0.1;
-	int contador2 = 0.1;
-	int contador3 = 0.1;
+	int contador1 = 500;
+	int contador2 = 250;
+	int contador3 = 100;
 	bool repetir = true;
 	bool continuar;
 	
@@ -21,26 +21,26 @@ int main()
 	{
 		std::cout << "En este programa haremos diferentes tipos de contadores y con diferentes velocidades\n";
 		
-
-		while (i <= 100)
+		//while
+		while (i <= 1000)
 		{
 			std::cout << "El contador while va en: " << i << " " << std::endl;
 			i++;
 			Sleep(contador1);
 		}
 		system("PAUSE()");
-
+		//do while
 		i = 0;
 		do
 		{
 			std::cout << "El contador 10x10 va en: " << i << std::endl; i++;
 			Sleep(contador2);
-		} while(i<=100);
+		} while(i<=1000);
 
 	
 		system("PAUSE()");
-
-		for (i = 0; i <= 100; i++)
+		//for
+		for (i = 0; i <= 1000; i++)
 		{
 			std::cout << "El contador for va en: " << i << std::endl; i++;
 			Sleep(contador3);
