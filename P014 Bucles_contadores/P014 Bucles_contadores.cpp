@@ -20,7 +20,7 @@ int main()
 	while (repetir)
 	{
 		std::cout << "En este programa haremos diferentes tipos de contadores y con diferentes velocidades\n";
-		std::cout << "Vamos a empezar con un contador que funciona con while,do, for\n";
+		
 
 		while (i <= 100)
 		{
@@ -33,7 +33,7 @@ int main()
 		i = 0;
 		do
 		{
-			std::cout << "El contador do while va en: " << i << std::endl; i++;
+			std::cout << "El contador 10x10 va en: " << i << std::endl; i++;
 			Sleep(contador2);
 		} while(i<=100);
 
@@ -55,13 +55,13 @@ int main()
 
 		std::cout << "Ahora vamos a contar de 10 en 10 hasta llegar a 100\n";
 
-		for (i = 0; i <= 100; i = i++)
+		for (i = 0; i <= 100; i = ++i)
 		{
-			std::cout << i;
+			std::cout << i << " ";
 			Sleep(contador3);
 			if (i % 10 == 9)
 			{
-				printf("\n\n");
+				printf("\n");
 			}
 		}
 

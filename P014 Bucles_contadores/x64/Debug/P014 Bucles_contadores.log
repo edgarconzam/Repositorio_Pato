@@ -1,6 +1,6 @@
 ﻿  P014 Bucles_contadores.cpp
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P014 Bucles_contadores\P014 Bucles_contadores.cpp(13,16): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P014 Bucles_contadores\P014 Bucles_contadores.cpp(14,16): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P014 Bucles_contadores\P014 Bucles_contadores.cpp(15,16): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P014 Bucles_contadores\P014 Bucles_contadores.cpp(17,7): warning C4101: 'continuar': variable local sin referencia
-  P014 Bucles_contadores.vcxproj -> C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P014 Bucles_contadores\x64\Debug\P014 Bucles_contadores.exe
+C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\Repositorio_Pato\P014 Bucles_contadores\P014 Bucles_contadores.cpp(13,16): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\Repositorio_Pato\P014 Bucles_contadores\P014 Bucles_contadores.cpp(14,16): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\Repositorio_Pato\P014 Bucles_contadores\P014 Bucles_contadores.cpp(15,16): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\Repositorio_Pato\P014 Bucles_contadores\P014 Bucles_contadores.cpp(17,7): warning C4101: 'continuar': variable local sin referencia
+  P014 Bucles_contadores.vcxproj -> C:\Users\LABORATORIO 210\Desktop\Repositorio de pato no borrar\Repositorio_Pato\P014 Bucles_contadores\x64\Debug\P014 Bucles_contadores.exe
