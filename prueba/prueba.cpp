@@ -1,91 +1,41 @@
-// P009_Condicionales_Calculadora.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
-
+// P015_Batallapokemon_V0.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+// Daniel Reyes C.
+// Realizar una batalla pokemon entre 2 pokemones
 #include <iostream>
+#include <string>
+#include <ctime>
 
-int main()
-{
-    int opc;
-    int n1, n2;
-    int absoluto;
-    int numero;
-    
-    bool repetir = true;
+int main() {
+    srand(time(0));
 
+    int saludgyarados = 100;
+    int saludmewtwo = 100;
 
-    while (repetir)
+    std::string Gyarados = "Gyarados";
+    std::string Mewtwo = "Mewtwo";
+
+    while (saludgyarados > 0 && saludmewtwo > 0)
     {
-    std::cout << "Hola usuario dime que Operacion quieres hacer?\n";
-    std::cout << "1.-suma 2.-resta 3.-multiplicacion 4.-division 5.-Valor absoluto 6.-Mayor y menor que\n";
+        int ataquegyarados = rand() % 25 + 1;
+        std::cout << Gyarados << " ataca a " << Mewtwo << " por " << ataquegyarados << " puntos de daño" << std::endl;
+        saludmewtwo -= ataquegyarados;
 
-    std::cin >> opc;
-
-
-        switch (opc)
+        if (saludmewtwo <= 0)
         {
-        case 1:
-            std::cout << "Dame un numero\n";
-            std::cin >> n1;
-            std::cout << "Dame otro numero para sumarlo\n";
-            std::cin >> n2;
-            std::cout << n1 + n2;
+            std::cout << Mewtwo << " ha sido derrotado. " << Gyarados << " ha ganado" << std::endl;
             break;
-        case 2:
-            std::cout << "Dame un numero\n";
-            std::cin >> n1;
-            std::cout << "Dame otro numero para restarlo\n";
-            std::cin >> n2;
-            std::cout << n1 - n2;
-            break;
-        case 3:
-            std::cout << "Dame un numero\n";
-            std::cin >> n1;
-            std::cout << "Dame otro numero para multiplicarlo\n";
-            std::cin >> n2;
-            std::cout << n1 * n2;
-            break;
-        case 4:
-            std::cout << "Dame un numero\n";
-            std::cin >> n1;
-            std::cout << "Dame otro numero para dividirlo\n";
-            std::cin >> n2;
-            std::cout << n1 / n2;
-            break;
-        case 5:
-            std::cout << "Este porgrama determina el valor absoluto de un muero\n";
-            std::cout << "Ingresa el numero\n";
-            std::cin >> numero;
-            absoluto = abs(numero);
-            std::cout << "El valor absoulto de " << numero << " es " << absoluto;
-            break;
-          
-        case 6:
-            std::cout << "Dame un numero: ";
-            std::cin >> n1;
-            std::cout << "\ndame otro y te dire ";
-            std::cout << " cual es mayor y cual es menor: ";
-            std::cin >> n2;
-            if (n1 == n2)
-            {
-                std::cout << "\naaa mira son iguales!\n";
-            }
-            else
-            {
-                if (n1 < n2)
-                {
-                    std::cout << "El mayor es " << n2 << "\nY el menor es " << n1 << std::endl;
-                }
-                else
-                {
-                    std::cout << "El mayor es " << n1 << "\nY el menor es " << n2 << std::endl;
-                }
-            }
-
         }
-        std::cout << "\nQuieres hacer otra operacion?\n";
-        std::cout << "\n1.-Si 0.-No\n";
-        std::cin >> repetir;
+
+        int ataquemewtwo = rand() % 20 + 1;
+        std::cout << Mewtwo << " ataca a " << Gyarados << " por " << ataquemewtwo << " puntos de daño" << std::endl;
+        saludgyarados -= ataquemewtwo;
+
+        if (saludgyarados <= 0)
+        {
+            std::cout << Gyarados << " ha sido derrotado. " << Mewtwo << " ha ganado" << std::endl;
+            break;
+        }
     }
+
+    return 0;
 }
-
-

@@ -1,6 +1,21 @@
 ﻿  P015 Batalla Pokémon.cpp
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(54,27): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(22,9): warning C4101: 'ataque': variable local sin referencia
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(21,9): warning C4101: 'vida': variable local sin referencia
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(24,10): warning C4101: 'continuar': variable local sin referencia
-  P015 Batalla Pokémon.vcxproj -> C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\x64\Debug\P015 Batalla Pokémon.exe
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(68,31): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(72,32): warning C4473: "printf": no se pasaron suficientes argumentos para la cadena de formato
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(72,32): message : los marcadores de posición y sus parámetros esperan 1 argumentos variádicos, pero se proporcionaron 0
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(72,32): message : el argumento variádico 1 que falta es requerido por la cadena de formato '%d'
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(88,31): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(92,32): warning C4473: "printf": no se pasaron suficientes argumentos para la cadena de formato
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(92,32): message : los marcadores de posición y sus parámetros esperan 1 argumentos variádicos, pero se proporcionaron 0
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(92,32): message : el argumento variádico 1 que falta es requerido por la cadena de formato '%d'
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(126,35): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(130,36): warning C4473: "printf": no se pasaron suficientes argumentos para la cadena de formato
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(130,36): message : los marcadores de posición y sus parámetros esperan 1 argumentos variádicos, pero se proporcionaron 0
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(130,36): message : el argumento variádico 1 que falta es requerido por la cadena de formato '%d'
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(144,35): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(148,36): warning C4473: "printf": no se pasaron suficientes argumentos para la cadena de formato
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(148,36): message : los marcadores de posición y sus parámetros esperan 1 argumentos variádicos, pero se proporcionaron 0
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(148,36): message : el argumento variádico 1 que falta es requerido por la cadena de formato '%d'
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(67,17): error C2360: la inicialización de 'ataquepikachu' se omite en la etiqueta 'case'
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(56,25): message : vea la declaración de 'ataquepikachu'
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(87,17): error C2360: la inicialización de 'ataquepikachu' se omite en la etiqueta 'case'
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P015 Batalla Pokémon\P015 Batalla Pokémon.cpp(56,25): message : vea la declaración de 'ataquepikachu'

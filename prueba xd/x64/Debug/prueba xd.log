@@ -1,2 +1,6 @@
 ﻿  prueba xd.cpp
-  prueba xd.vcxproj -> C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\prueba xd\x64\Debug\prueba xd.exe
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\prueba xd\prueba xd.cpp(13,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\prueba xd\prueba xd.cpp(24,19): error C2664: 'BOOL PlaySoundW(LPCWSTR,HMODULE,DWORD)': el argumento 1 no puede convertirse de 'const char [11]' a 'LPCWSTR'
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\prueba xd\prueba xd.cpp(24,29): message : Los tipos señalados no están relacionados; la conversión requiere reinterpret_cast, conversión de estilo de C o conversión de estilo de función entre paréntesis
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\playsoundapi.h(112,1): message : vea la declaración de 'PlaySoundW'
+C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\prueba xd\prueba xd.cpp(24,19): message : al hacer coincidir la lista de argumentos '(const char [11], int, int)'
