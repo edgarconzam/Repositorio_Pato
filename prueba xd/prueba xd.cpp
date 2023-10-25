@@ -4,57 +4,35 @@
 #include <iostream>
 #include <string>
 #include <ctime>
-#include <conio.h>
-#include <windows.h>
 
-int main() 
-{
-
+int main() {
     srand(time(0));
-   
 
-    int saludpikachu = 100;
-    int saludcharizard = 100;
-    
-   
+    int saludgyarados = 100;
+    int saludmewtwo = 100;
 
-    std::string pikachu = "pikachu";
-    std::string charizard = "charizard";
+    std::string Gyarados = "Gyarados";
+    std::string Mewtwo = "Mewtwo";
 
-    bool musica = PlaySound("Spider.wav", NULL, SND_SYNC);
-    std::cout << "musica: " << musica << std::endl;
-
-    std::cout << "==================================\n";
-    std::cout << "BIENVENIDO AL ARENA POKEMON\n";
-    std::cout << "==================================\n";
-
-
-    while (saludpikachu > 0 && saludcharizard > 0)
+    while (saludgyarados > 0 && saludmewtwo > 0)
     {
-        std::cout << "------------------------------------------------------------------------------------------------------------\n";
-        int ataquepikachu = rand() % 25 + 1;
-        std::cout << pikachu<< " ataca a " << charizard << " por " << ataquepikachu<< " puntos de ataque" << std::endl;
-        std::cout << "------------------------------------------------------------------------------------------------------------\n";
-        saludcharizard -= ataquepikachu;
+        int ataquegyarados = rand() % 25 + 1;
+        std::cout << Gyarados << " ataca a " << Mewtwo << " por " << ataquegyarados << " puntos de daño" << std::endl;
+        saludmewtwo -= ataquegyarados;
 
-        if (saludcharizard <= 0)
+        if (saludmewtwo <= 0)
         {
-            std::cout << "------------------------------------------------------------------------------------------------------------\n";
-            std::cout << charizard << " ha muerto. " << pikachu << " ha ganado la pelea" << std::endl;
-            std::cout << "------------------------------------------------------------------------------------------------------------\n";
+            std::cout << Mewtwo << " ha sido derrotado. " << Gyarados << " ha ganado" << std::endl;
             break;
         }
-        std::cout << "------------------------------------------------------------------------------------------------------------\n";
-        int ataquecharizard = rand() % 20 + 1;
-        std::cout << charizard << " ataca a " << pikachu << " por " << ataquecharizard << " puntos de ataque" << std::endl;
-        std::cout << "------------------------------------------------------------------------------------------------------------\n";
-        saludpikachu -= ataquecharizard;
 
-        if (saludpikachu <= 0)
+        int ataquemewtwo = rand() % 20 + 1;
+        std::cout << Mewtwo << " ataca a " << Gyarados << " por " << ataquemewtwo << " puntos de daño" << std::endl;
+        saludgyarados -= ataquemewtwo;
+
+        if (saludgyarados <= 0)
         {
-            std::cout << "------------------------------------------------------------------------------------------------------------\n";
-            std::cout << pikachu << " ha muerto. " << charizard << " ha ganado la pelea" << std::endl;
-            std::cout << "------------------------------------------------------------------------------------------------------------\n";
+            std::cout << Gyarados << " ha sido derrotado. " << Mewtwo << " ha ganado" << std::endl;
             break;
         }
     }
