@@ -19,17 +19,18 @@ int main()
 
     int saludpikachu = 50;
     int saludcharizard = 50;
-    bool repetir;
+ 
 
 
     std::string pikachu = "pikachu";
     std::string charizard = "charizard";
 
     
-    while (repetir)
-    {
+   
+    
         std::cout << "==================================\n";
         std::cout << "BIENVENIDO AL ARENA POKEMON\n";
+        std::cout << "Eres pikachu\n";
         std::cout << "==================================\n";
 
 
@@ -40,11 +41,13 @@ int main()
             std::cout << pikachu << " le tira un rayo a " << charizard << " por " << ataquepikachu << " puntos de ataque" << std::endl;
             std::cout << "------------------------------------------------------------------------------------------------------------\n";
             saludcharizard -= ataquepikachu;
+            std::cout << "Tienes " << saludpikachu << "<3\n    " << "      Charizard tiene " << saludcharizard << "<3";
 
             if (saludcharizard <= 0)
             {
                 std::cout << "------------------------------------------------------------------------------------------------------------\n";
                 std::cout << charizard << " ha muerto. " << pikachu << " ha ganado la pelea" << std::endl;
+                std::cout << "Tienes " << saludpikachu << "<3\n";
                 std::cout << "------------------------------------------------------------------------------------------------------------\n";
                 break;
             }
@@ -53,18 +56,16 @@ int main()
             std::cout << charizard << " le tira una bola de fuego a " << pikachu << " por " << ataquecharizard << " puntos de ataque" << std::endl;
             std::cout << "------------------------------------------------------------------------------------------------------------\n";
             saludpikachu -= ataquecharizard;
+            std::cout << "Tienes " << saludcharizard << "<3\n       " << "    Charizard tiene " << saludcharizard << "<3";
 
             if (saludpikachu <= 0)
             {
                 std::cout << "------------------------------------------------------------------------------------------------------------\n";
                 std::cout << pikachu << " tu pokemon murio. " << charizard << " ganola pelea" << std::endl;
+                std::cout << "Tienes " << saludcharizard << "<3\n";
                 std::cout << "------------------------------------------------------------------------------------------------------------\n";
                 break;
             }
 
         }
-        std::cout << "Quieres jugar otra vez?\n";
-        std::cout << "1.-si  0.-no\n";
-        std::cin >> repetir;
-    }
 }
