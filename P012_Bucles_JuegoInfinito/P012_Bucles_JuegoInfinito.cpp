@@ -9,12 +9,12 @@
 int main()
 {
     int contador = 0;
-    bool repetir = true;
+    bool repetir{};
     bool opc;
     
     setlocale(LC_ALL, "ES_MX.UTF-8");
    
-   while(repetir)
+   while(repetir = true)
    {
        std::cout << "Bienvenido a LATAM *Dia 1*\n";
        std::cout << "Inicias con 3 <3\n";
@@ -161,10 +161,11 @@ int main()
            }
        }
 
-        std::cout << "¿Deseas repetir?\n";
-        std::cout << "1.-Si  0.-No\n";
-        std::cin >> repetir;
-        system("cls");
+       std::cout << "¿Deseas repetir?\n";
+       std::cout << "1.-Si  0.-No\n";
+       std::cin >> repetir;
+       system("cls");
    }
+
 }
 
