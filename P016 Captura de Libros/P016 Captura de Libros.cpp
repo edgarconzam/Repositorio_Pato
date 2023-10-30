@@ -2,18 +2,34 @@
 //Guardar Videojuegos en un arreglo Finito (3 juegos por lo menos).
 //Edgar Constantino
 #include <iostream>
+#include <string>
+#include <locale.h>
 
 int main()
 {
     setlocale(LC_ALL, "ES_MX.UTF-8");
-    std::string juego[3] = {"Rocket League ","Fornite ", "Valorant " };
-    int anio[3] = { 2015, 2017, 2020 };
-    std::string autor[3] = { "Corey Davis ", "Tim Sweeney ", "David Nottingham " };
-    std::string estudio[3] = { "Psyonix ", "Epic Games ", "Riot Games " };
+    std::string juego[3];
+    int anio[3];
+    std::string autor[3];
+    std::string estudio[3];
 
     for (int i = 0; i <= 2; i++)
     {
-        std::cout << "El juego " << juego[i] << "fue creado en el año " << anio[i] << " por el autor " << autor[i] << "y creado por el estudio " << estudio[i] << std::endl;
+        std::cout << "Ingresa el nombre del juego: ";
+        getline(std::cin, juego[i]);
+        std::cout << "Ingresa el año en el que se creo: ";
+        std::cin, anio[i];
+        std::cout << "Ingresa el autor del juego: ";
+        std::cin.ignore();
+        getline(std::cin, autor[i]);
+        std::cout << "Ingresa el estudio del juego: ";
+        getline(std::cin, estudio[i]);
+
+    }
+ 
+    for (int j = 0; j <= 2; j++)
+    {
+        std::cout << "El juego es: " <<
     }
 
 }
