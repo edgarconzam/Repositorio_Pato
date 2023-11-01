@@ -29,7 +29,10 @@ int main()
  
     for (int j = 0; j <= 2; j++)
     {
-        std::cout << "El juego es: " <<
+        std::cout << "El juego " << j + 1 << " se llama " << juego[j] << std::endl;
+        std::cout << "Año del juego " << j + 1 << " se creo en el año " << juego[j] << std::endl;
+        std::cout << "El autor del juego " << j + 1 << " es " << juego[j] << std::endl;
+        std::cout << "El estudio del juego " << j + 1 << " es " << juego[j] << std::endl;
     }
 
 }
