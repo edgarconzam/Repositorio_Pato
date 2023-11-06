@@ -1,5 +1,7 @@
-// P017 Matrices.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
+// 009_Ciclos_Anidados_V0.cpp : 
+// Mau Cabrera
+// Este archivo contiene el recorrido de arreglos
+// Memoria de los arreglos y el inicio de los arreglos dinámicos
 
 #include <iostream>
 #include <windows.h>
@@ -46,7 +48,4 @@ int main()
         }
         std::cout << "\n";
     }
-
-    int filas = sizeof(unidades) / sizeof(unidades[0]);
-    std::cout << "El num de columnas es: "
 }
