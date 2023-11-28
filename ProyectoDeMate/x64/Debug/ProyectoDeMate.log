@@ -1,3 +1,2 @@
 ﻿  ProyectoDeMate.cpp
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\ProyectoDeMate\ProyectoDeMate.cpp(79,18): error C2086: 'char jugarNuevamente': nueva definición
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\ProyectoDeMate\ProyectoDeMate.cpp(35,18): message : vea la declaración de 'jugarNuevamente'
+  ProyectoDeMate.vcxproj -> C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\ProyectoDeMate\x64\Debug\ProyectoDeMate.exe

@@ -12,18 +12,18 @@
 #include <algorithm> 
 
 int lanzarMoneda() {
-    return rand() % 2; // Devuelve 0 (cara) o 1 (cruz)
+    return rand() % 2; 
 }
 
 int main() {
-    // Inicializar la semilla para la generación de números aleatorios
+    //semilla numeros random
     srand(static_cast<unsigned int>(time(nullptr)));
 
-    bool repetir;
+    char repetir;
     do {
         int minijuego;
 
-        std::cout << "Bienvenido al casinito donde podrás jugar tres minijuegos, elige uno." << std::endl;
+        std::cout << "Bienvenido al casinito de san Patricio donde podrás jugar tres minijuegos, elige uno." << std::endl;
         std::cout << "1.-CoinFlip (un lanzamiento) 2.-CoinFlip (dos lanzamientos) 3.-Bolsa De Canicas" << std::endl;
         std::cin >> minijuego;
 
@@ -51,12 +51,12 @@ int main() {
                 if (resultado == eleccionUsuario) {
                     std::cout << "Ganaste!" << std::endl;
                     std::cout << "Tenias un " << 0.5 * 100 << "% de acertar, debido a que solo hay dos opciones con la misma probabilidad." << std::endl;
-                    std::cout << "Esto se conoce como Probabilidad simple." << std::endl;
+                    std::cout << "Esto se llama Probabilidad simple." << std::endl;
                 }
                 else {
                     std::cout << "Perdiste" << std::endl;
                     std::cout << "Tenias un " << 0.5 * 100 << "% de acertar, debido a que solo hay dos opciones con la misma probabilidad." << std::endl;
-                    std::cout << "Esto se conoce como Probabilidad simple." << std::endl;
+                    std::cout << "Esto se llama Probabilidad simple." << std::endl;
                 }
 
                 std::cout << "Quieres jugar de nuevo? (y/n): ";
@@ -86,23 +86,24 @@ int main() {
 
                 if (resultado1 == eleccionUsuario1 && resultado2 == eleccionUsuario2) {
                     std::cout << "Ganaste!" << std::endl;
-                    std::cout << "Tenias un " << (0.25 * 0.25) * 100 << "% de acertar, esto es porque al tirar un dado tienes un 0.5 de probabilidad de sacar ambos lados " << std::endl;
-                    std::cout << " y para saber que probabilidad hay para sacar los lados que elegiste de los dos lanzamientos tienes que multiplicar (0.5*0.5) * 100 que nos da 25" << std::endl;
-                    std::cout << "Esto se le llama probabilidad dependencia" << std::endl;
+                    std::cout << "Tenías un " << (0.5 * 0.5) * 100 << "% de acertar, esto es porque al tirar un dado tienes un 0.5 de probabilidad de sacar ambos lados." << std::endl;
+                    std::cout << " Y para saber qué probabilidad hay para sacar los lados que elegiste de los dos lanzamientos, tienes que multiplicar (0.5 * 0.5) * 100 que nos da 25%." << std::endl;
+                    std::cout << "Esto se llama probabilidad independiente." << std::endl;
                 }
                 else {
                     std::cout << "Perdiste" << std::endl;
-                    std::cout << "Tenias un " << (0.25 * 0.25) * 100 << "% de acertar, esto es porque al tirar un dado tienes un 0.5 de probabilidad de sacar ambos lados " << std::endl;
-                    std::cout << " y para saber que probabilidad hay para sacar los lados que elegiste de los dos lanzamientos tienes que multiplicar (0.5*0.5) * 100 que nos da 25" << std::endl;
-                    std::cout << "Esto se le llama probabilidad independiente" << std::endl;
+                    std::cout << "Tenias un " << (0.5 * 0.5) * 100 << "% de acertar, esto es porque al tirar un dado tienes un 0.5 de probabilidad de sacar ambos lados." << std::endl;
+                    std::cout << " Y para saber qué probabilidad hay para sacar los lados que elegiste de los dos lanzamientos, tienes que multiplicar (0.5 * 0.5) * 100 que nos da 25%." << std::endl;
+                    std::cout << "Esto se llama probabilidad independiente." << std::endl;
                 }
 
                 std::cout << "Quieres jugar de nuevo? (y/n): ";
                 std::cin >> jugarNuevamente;
             } while (jugarNuevamente == 'y');
             break;
+        }
 
-        case 3:
+        case 3: {
             // Definir las canicas en la bolsa como un arreglo de strings
             std::string bolsaDeCanicas[] = { "roja", "roja", "roja", "verde", "amarilla", "amarilla" };
 
@@ -122,8 +123,8 @@ int main() {
                     char opcion;
                     std::cin >> opcion;
 
-                    if (opcion == 's' || opcion == 'S') {
-                        // Encontrar la primera canica no sacada
+                    if (opcion == 's') {
+                        // find canica no sacada
                         auto it = std::find_if(std::begin(bolsaDeCanicas), std::end(bolsaDeCanicas), [](const std::string& canica) {
                             return !canica.empty();
                             });
@@ -135,42 +136,55 @@ int main() {
 
                             std::cout << "Has sacado una canica " << canicaSacada << std::endl;
 
-                            // Verificar si la canica sacada es roja
+                            // Verificar si es roja
                             if (canicaSacada == "roja") {
                                 canicasRojasSacadas++;
 
                                 if (canicasRojasSacadas == 3) {
-                                    std::cout << "¡Ganaste! Has sacado las 3 canicas rojas seguidas." << std::endl;
+                                    std::cout << "Ganaste! Has sacado las 3 canicas rojas seguidas." << std::endl;
+                                    std::cout << "Tenias un " << 0.5*0.4*0.25*100 << "% de sacar las 3 canicas rojas seguidas.Y para saber como sacar la probabilidad tienes que contar las canicas " << std::endl;
+                                    std::cout << "rojas que hay y dividirlas por el total de canicas que hay en la bolsa. Antes de sacar la primera roja, tienes que dividir 3 canicas rojas entre 6 canicas totales que te da una probabilidad de 0.5. " << std::endl;
+                                    std::cout << "Para la segunda roja despues de sacar la primera tienes que dividir 2 canicas rojas entre 5 canicas totales que te da una probabilidad de 0.4. " << std::endl;
+                                    std::cout << "Para la tercera roja despues de sacar la segunda tienes que dividir 1 canica roja entre 4 canicas totales que te da una probabilidad de 0.25" << std::endl;
+                                    std::cout << "Y por ultimo multiplicas todas esas probabilidades y las multiplicas * 100 que te da un resultado de 5% de probabilidad de sacar las 3 canicas rojas seguidas" << std::endl;
+                                    std::cout << "A esto se le conoce como probabilidad dependiente" << std::endl;
                                     break;
                                 }
                             }
                             else {
                                 std::cout << "Perdiste. No has sacado las 3 canicas rojas seguidas." << std::endl;
+                                std::cout << "Tenias un " << 0.5 * 0.4 * 0.25 * 100 << "% de sacar las 3 canicas rojas seguidas.Y para saber como sacar la probabilidad tienes que contar las canicas " << std::endl;
+                                std::cout << "rojas que hay y dividirlas por el total de canicas que hay en la bolsa. Antes de sacar la primera roja, tienes que dividir 3 canicas rojas entre 6 canicas totales que te da una probabilidad de 0.5. " << std::endl;
+                                std::cout << "Para la segunda roja despues de sacar la primera tienes que dividir 2 canicas rojas entre 5 canicas totales que te da una probabilidad de 0.4. " << std::endl;
+                                std::cout << "Para la tercera roja despues de sacar la segunda tienes que dividir 1 canica roja entre 4 canicas totales que te da una probabilidad de 0.25" << std::endl;
+                                std::cout << "Y por ultimo multiplicas todas esas probabilidades y las multiplicas * 100 que te da un resultado de 5% de probabilidad de sacar las 3 canicas rojas seguidas" << std::endl;
+                                std::cout << "A esto se le conoce como probabilidad dependiente" << std::endl;
                                 break;
                             }
                         }
                     }
                     else {
-                        std::cout << "Opción no válida. Presiona 's' para sacar una canica." << std::endl;
+                        std::cout << "Opcion no válida. Presiona 's' para sacar una canica." << std::endl;
                     }
                 } while (true);
 
-                std::cout << "¿Quieres jugar de nuevo? (y/n): ";
+                std::cout << "Quieres jugar de nuevo? (y/n): ";
                 std::cin >> jugarNuevamente;
-            } while (jugarNuevamente == 'y' || jugarNuevamente == 'Y');
+            } while (jugarNuevamente == 'y');
 
-            std::cout << "Gracias por jugar. ¡Hasta luego!" << std::endl;
-
+            
+            break;
         }
+
         default:
             std::cout << "Opcion no valida. Ingresa un numero del 1 al 3." << std::endl;
-            return 1; // Salir con código de error
+            return 1;
         }
 
         std::cout << "Quieres repetir el programa? (1 para sí, 0 para no): ";
         std::cin >> repetir;
         system("cls");
-    } while (repetir);
+    } while (repetir == '1');
 
     return 0;
 }
