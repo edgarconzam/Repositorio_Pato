@@ -1,0 +1,3 @@
+﻿  ConsoleApplication1.cpp
+C:\Users\ALUMNO\Desktop\PATO_POO(no borrar)\ConsoleApplication1\ConsoleApplication1.cpp(163,1): warning C4326: el tipo de valor devuelto de 'main' debe ser 'int' en lugar de 'void'
+C:\Users\ALUMNO\Desktop\PATO_POO(no borrar)\ConsoleApplication1\ConsoleApplication1.cpp(218,15): error C2040: 'Julio: 'Boxeador *' se diferencia en los niveles de direccionamiento indirecto de 'Atleta'
