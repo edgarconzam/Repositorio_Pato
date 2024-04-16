@@ -16,7 +16,7 @@ protected:
     std::string nombre;
 
 public:
-    void AumentaVel()
+    virtual void AumentaVel()
     {
         velocidad++;
         energia--;
@@ -159,6 +159,228 @@ public:
 
 };
 
+class Futbolista : public Atleta
+{
+protected:
+    int Goles;
+    int Asistencias;
+    int PartidosJugados;
+    
+    
+public:
+
+    void AumentaVel() override
+    {
+        velocidad += 10;
+        energia -= 5;
+    }
+
+    Futbolista() : Atleta()
+    {
+        Goles = 0;
+        Asistencias = 0;
+        PartidosJugados = 0;
+
+    }
+
+    Futbolista(int E, float V, int F, string N, int G, int A, int PJ)
+    {
+        energia = E;
+        velocidad = V;
+        fuerza = F;
+        nombre = N;
+        Goles = G;
+        Asistencias = A;
+        PartidosJugados = PJ;
+
+    }
+    ~Futbolista()
+    {
+        cout << nombre << " ha sido derrotado" << endl;
+    }
+
+    void setGoles(int G)
+    {
+        Goles = 0;  
+    }
+    int getGoles()
+    {
+        return Goles;
+    }
+    void setAsistencias(int A)
+    {
+        Asistencias = 0;
+    }
+    int getAsistencias()
+    {
+        return Asistencias;
+    }
+    void setPartidosJugados(int PJ)
+    {
+        PartidosJugados = 0;
+    }
+    int getPartidosJugados()
+    {
+        return PartidosJugados;
+    }
+};
+
+class Ciclista : public Atleta
+{
+protected:
+    int CarrerasGanadas;
+    int CarrerasPerdidas;
+    int CarrerasNF;
+    int TiempoRecord;
+
+public:
+
+    void AumentaVel() override
+    {
+        velocidad += 100;
+        energia -= 2;
+    }
+    Ciclista() : Atleta()
+    {
+        CarrerasGanadas = 0;
+        CarrerasPerdidas = 0;
+        CarrerasNF = 0;
+        TiempoRecord = 0;
+    }
+
+    Ciclista(int E, float V, int F, string N, int CG, int CP, int CNF, int TR)
+    {
+        energia = E;
+        velocidad = V;
+        fuerza = F;
+        nombre = N;
+        CarrerasGanadas = CG;
+        CarrerasPerdidas = CP;
+        CarrerasNF = CNF;
+        TiempoRecord = TR;
+
+    }
+
+    ~Ciclista()
+    {
+        cout << nombre << " ha sido derrotado" << endl;
+    }
+
+    void setCarrerasGanadas(int CG)
+    {
+        CarrerasGanadas = 0;
+
+    }
+    int getCarrerasGanadas()
+    {
+        return CarrerasGanadas;
+    }
+    void setCarrerasPerdidas(int CP)
+    {
+        CarrerasPerdidas = 0;
+
+    }
+    int getCarrerasPerdidas()
+    {
+        return CarrerasPerdidas;
+    }
+    void setCarrerasNF(int CNF)
+    {
+        CarrerasNF = 0;
+
+    }
+    int getCarrerasNF()
+    {
+        return CarrerasNF;
+    }
+    void setTiempoRecord(int TR)
+    {
+        TiempoRecord = 0;
+    }
+    int getTiempoRecord()
+    {
+        return TiempoRecord;
+    }
+};
+
+class Corredor : public Atleta
+{
+protected:
+    int CarrerasWins;
+    int CarrerasLoose;
+    int CarrerasNT;
+    int TiempoRecordd;
+
+public:
+
+    void AumentaVel() override
+    {
+        velocidad += 30;
+        energia -= 3;
+    }
+    Corredor() : Atleta()
+    {
+        CarrerasWins = 0;
+        CarrerasLoose = 0;
+        CarrerasNT = 0;
+        TiempoRecordd = 0;
+    }
+
+    Corredor(int E, float V, int F, string N, int CW, int CL, int CNT, int TRR)
+    {
+        energia = E;
+        velocidad = V;
+        fuerza = F;
+        nombre = N;
+        CarrerasWins = CW;
+        CarrerasLoose = CL;
+        CarrerasNT = CNT;
+        TiempoRecordd = TRR;
+
+    }
+
+    ~Corredor()
+    {
+        cout << nombre << " ha sido derrotado" << endl;
+    }
+
+    void setCarrerasWins(int CW)
+    {
+        CarrerasWins = 0;
+    }
+    int getCarrerasWins()
+    {
+        return CarrerasWins;
+    }
+    void setCarrerasLoose(int CL)
+    {
+        CarrerasLoose = 0;
+    }
+    int getCarrerasLoose()
+    {
+        return CarrerasLoose;
+    }
+    void setCarrerasNT(int CNT)
+    {
+        CarrerasNT = 0;
+    }
+    int getCarrerasNT()
+    {
+        return CarrerasNT;
+    }
+    void setTiempoRecordd(int TRR)
+    {
+        TiempoRecordd = 0;
+    }
+    int getTiempoRecordd()
+    {
+        return TiempoRecordd;
+    }
+
+};
+
+
+
 void main()
 {
     //constructor especifico
@@ -217,8 +439,16 @@ void main()
 
     Boxeador *Chavez = new Boxeador(150, 150, 150, "Julio Cesar Chavez", 107, 6, 2, 87);
     cout << "Nombre " << Chavez->Getnombre() << endl << endl;
-    
+
+
+    //POLIMORFISMO-------------------------------------------------------------------------------
+    Futbolista *CR7 = new Futbolista(100, 80, 99, "Cristiano Ronaldo", 885, 283, 1215);
+    cout << "Nombre " << CR7->Getnombre() << endl << endl;
+
+
 }
+
+
 
 
 
