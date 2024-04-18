@@ -1,5 +1,0 @@
-﻿  P017 Matrices.cpp
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P017 Matrices\P017 Matrices.cpp(37,23): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P017 Matrices\P017 Matrices.cpp(63,23): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P017 Matrices\P017 Matrices.cpp(89,23): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  P017 Matrices.vcxproj -> C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\P017 Matrices\x64\Debug\P017 Matrices.exe

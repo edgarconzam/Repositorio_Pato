@@ -1,7 +1,0 @@
-﻿  P018 Punteros.cpp
-C:\Users\LABORATORIO 210\Desktop\Repositorio_Pato\P018 Punteros\P018 Punteros.cpp(11,11): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\LABORATORIO 210\Desktop\Repositorio_Pato\P018 Punteros\P018 Punteros.cpp(12,11): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\LABORATORIO 210\Desktop\Repositorio_Pato\P018 Punteros\P018 Punteros.cpp(23,11): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\LABORATORIO 210\Desktop\Repositorio_Pato\P018 Punteros\P018 Punteros.cpp(24,11): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\LABORATORIO 210\Desktop\Repositorio_Pato\P018 Punteros\P018 Punteros.cpp(26,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  P018 Punteros.vcxproj -> C:\Users\LABORATORIO 210\Desktop\Repositorio_Pato\P018 Punteros\x64\Debug\P018 Punteros.exe

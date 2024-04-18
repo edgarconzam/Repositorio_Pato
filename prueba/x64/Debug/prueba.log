@@ -1,4 +1,0 @@
-﻿  prueba.cpp
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\prueba\prueba.cpp(61,9): warning C4101: 'cardsign3': variable local sin referencia
-C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\prueba\prueba.cpp(60,9): warning C4101: 'cardsign2': variable local sin referencia
-  prueba.vcxproj -> C:\Users\TUF\OneDrive\Escritorio\Repositorios pato\Repositorio_Pato\prueba\x64\Debug\prueba.exe
